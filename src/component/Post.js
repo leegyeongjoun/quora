@@ -2,8 +2,10 @@ import { Avatar } from '@material-ui/core';
 import { ArrowDownward, ArrowUpward, ChatBubbleOutlineOutlined, MoreHorizOutlined, RepeatOneOutlined, ShareOutlined } from '@material-ui/icons';
 import React from 'react';
 import '../css/Post.css';
+import Modal from 'react-modal';
 
 function Post() {
+    
     return (
         <div className='post'>
             <div className="post_info">

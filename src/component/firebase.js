@@ -18,11 +18,12 @@ const auth = firebase.auth()
 //구글 로그인
 const provider = new firebase.auth.GoogleAuthProvider()
 
+const facebookLogin = new firebase.auth.FacebookAuthProvider();
 const db = firebaseapp.firestore()
 
 // export 한개의 선언에서 여러개를 다른컴포넌트에서 import 해올 수 있다
 //ex) export 과일 import{사과, 바나나, 딸기} from '과일'
-export {auth, provider}
+export {auth, provider, facebookLogin}
 
 //export default가 붙는 이유는 오로지 한개의 모듈만을 가져옴
 //ex) export defalut 직선 import 직선 from 직선
